@@ -35,3 +35,10 @@ $(document).ready(function() {
 		window.open("https://www.twitter.com/");
 	});
 });
+
+/* code for accessing location */
+if(navigator.geolocation) {
+	navigator.geolocation.getCurrentPosition(function(position) {
+		$("#loc").html("latitude: " +position.coords.latitude + "<br>longitude: " + position.coords.longitude);
+	})
+}
