@@ -37,3 +37,7 @@ body {
 	float: right;
 	margin-top: -28px;
 }
+
+#loc {
+	height: 20px;
+}
